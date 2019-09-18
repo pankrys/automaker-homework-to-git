@@ -5,12 +5,12 @@ touch .gitignore
 echo "git.sh">.gitignore
 
 #---------master---------------
-date>file1.txt
+date>>file1.txt
 git add .
 git commit -m "master commit #1"
 
 #-----
-date>file0.txt
+date>>file0.txt
 git add .
 git commit -m "master commit #2"
 #------------------------------
@@ -38,7 +38,7 @@ git commit -m "hotfix"
 git checkout dev
 git checkout -b features
 #------
-date>file2.txt
+date>>file2.txt
 echo 'features'>>file0.txt
 echo 'features'>>file1.txt
 echo 'features'>>file2.txt
